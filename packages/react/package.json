@@ -20,7 +20,8 @@
     "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && npm run build:umd && ts-node copy",
     "build:cjs": "tsc --project tsconfig.build.json",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
-    "build:umd": "rollup --config"
+    "build:umd": "rollup --config --verbose",
+    "build:copy": "ts-node copy"
   },
   "devDependencies": {
     "@formily/reactive": "^2.0.2",
@@ -29,7 +30,7 @@
   "peerDependencies": {
     "@formily/reactive": "^2.0.2",
     "@formily/reactive-react": "^2.0.2",
-    "antd": "^4.15.4",
+    "antd": "^5.11.5",
     "react": "16.x || 17.x"
   },
   "dependencies": {

@@ -1,5 +1,3 @@
-@import '~antd/lib/style/themes/default.less';
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -67,8 +65,8 @@
     overflow: overlay;
   }
 
-  .@{ant-prefix}-formily-item {
-    border-bottom: 1px solid @border-color-split;
+  .ant-formily-item {
+    border-bottom: 1px solid #d9d9d9;
     padding-bottom: 8px;
     margin-bottom: 8px;
     margin-top: 8px;
@@ -77,16 +75,16 @@
       font-size: 13px;
     }
 
-    .@{ant-prefix}-formily-item-control-content-component {
+    .ant-formily-item-control-content-component {
       display: flex;
       align-items: center;
       justify-content: flex-end;
 
-      &>.@{ant-prefix}-radio-group {
+      & > .ant-radio-group {
         display: flex !important;
         width: 100%;
 
-        .@{ant-prefix}-radio-button-wrapper {
+        .ant-radio-button-wrapper {
           display: flex;
           justify-content: center;
           padding: 0 6px !important;
@@ -95,13 +93,13 @@
         }
       }
 
-      &>.@{ant-prefix}-slider {
+      & > .ant-slider {
         flex-shrink: 0;
         min-width: 0;
         width: 100%;
       }
 
-      &>.@{ant-prefix}-select {
+      & > .ant-select {
         max-width: 140px;
       }
     }

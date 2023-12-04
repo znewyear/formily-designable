@@ -1,5 +1,3 @@
-@import '~antd/lib/style/themes/default.less';
-
 .dn-input-items {
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +7,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    color: @text-color;
+
     &-icon {
       display: flex;
       align-items: center;
@@ -17,7 +15,6 @@
       margin: 0 8px;
       flex-shrink: 0;
       flex-grow: 0;
-      color: @text-color;
     }
 
     &-controller {
@@ -25,10 +22,10 @@
       flex-shrink: 1;
       flex-grow: 1;
 
-      .@{ant-prefix}-radio-group {
+      .ant-radio-group {
         display: flex;
 
-        .@{ant-prefix}-radio-button-wrapper {
+        .ant-radio-button-wrapper {
           flex-grow: 1;
           display: flex;
           justify-content: center;

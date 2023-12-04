@@ -29,7 +29,7 @@
     "@formily/reactive": "^2.0.2",
     "@formily/reactive-react": "^2.0.2",
     "@formily/shared": "^2.0.2",
-    "antd": "^4.0.0"
+    "antd": "^5.11.5"
   },
   "devDependencies": {
     "@formily/antd": "^2.0.2",
@@ -38,14 +38,14 @@
     "@formily/reactive": "^2.0.2",
     "@formily/reactive-react": "^2.0.2",
     "@formily/shared": "^2.0.2",
-    "antd": "^4.15.5"
+    "antd": "^5.11.5"
   },
   "dependencies": {
     "@babel/parser": "^7.14.7",
     "@designable/core": "1.0.0-beta.45",
     "@designable/react": "1.0.0-beta.45",
     "@designable/shared": "1.0.0-beta.45",
-    "@monaco-editor/react": "^4.2.1",
+    "@monaco-editor/react": "4.4.6",
     "monaco-editor": "^0.25.2",
     "prettier": "^2.3.2",
     "react-color": "^2.19.3",

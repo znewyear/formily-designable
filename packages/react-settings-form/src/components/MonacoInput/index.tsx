@@ -8,7 +8,6 @@ import { uid } from '@designable/shared'
 import { format } from './format'
 import cls from 'classnames'
 import './styles.less'
-import './config'
 import { initMonaco } from './config'
 
 export type Monaco = typeof monaco

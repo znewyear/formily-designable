@@ -40,7 +40,7 @@ export default {
   },
   resolve: {
     modules: ['node_modules'],
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.mjs'],
     alias: getWorkspaceAlias(),
   },
   module: {
@@ -92,6 +92,11 @@ export default {
         options: {
           name: '[name].[ext]',
         },
+      },
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto',
       },
     ],
   },

@@ -6,7 +6,7 @@ import MonacoPlugin from 'monaco-editor-webpack-plugin'
 import webpack from 'webpack'
 import path from 'path'
 
-const PORT = 3000
+const PORT = 3001
 
 const createPages = (pages) => {
   return pages.map(({ filename, template, chunk }) => {

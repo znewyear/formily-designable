@@ -13,7 +13,7 @@ import {
   Select,
   FormItem,
   FormCollapse,
-} from '@formily/antd'
+} from '@formily/antd-v5'
 import { Modal, Card, Button, Tag, Tooltip } from 'antd'
 import { PathSelector } from './PathSelector'
 import { FieldPropertySetter } from './FieldPropertySetter'

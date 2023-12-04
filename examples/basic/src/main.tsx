@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import {
-  Designer,
   IconWidget,
   Workbench,
-  ViewPanel,
-  DesignerToolsWidget,
-  ViewToolsWidget,
-  OutlineTreeWidget,
-  ResourceWidget,
-  StudioPanel,
-  CompositePanel,
-  WorkspacePanel,
-  ToolbarPanel,
-  ViewportPanel,
-  SettingsPanel,
-  HistoryWidget,
+  Designer, //设计器根组件，主要用于下发上下文
+  DesignerToolsWidget, //画板工具挂件
+  ViewToolsWidget, //视图切换工具挂件
+  OutlineTreeWidget, //大纲树组件，它会自动识别当前工作区，展示出工作区内树节点
+  ResourceWidget, //拖拽源挂件
+  HistoryWidget, //历史记录挂件
+  StudioPanel, //主布局面板
+  CompositePanel, //左侧组合布局面板
+  WorkspacePanel, //工作区布局面板
+  ToolbarPanel, //工具栏布局面板
+  ViewportPanel, //视口布局面板
+  ViewPanel, //视图布局面板
+  SettingsPanel, //右侧配置表单布局面板
 } from '@designable/react'
 import { SettingsForm, MonacoInput } from '@designable/react-settings-form'
 import { observer } from '@formily/react'
@@ -28,8 +28,6 @@ import {
 import { Content } from './content'
 import { Space, Button, Radio } from 'antd'
 import { GithubOutlined } from '@ant-design/icons'
-//import { Sandbox } from '@designable/react-sandbox'
-import 'antd/dist/antd.less'
 
 const RootBehavior = createBehavior({
   name: 'Root',
@@ -39,7 +37,7 @@ const RootBehavior = createBehavior({
   },
   designerLocales: {
     'zh-CN': {
-      title: '根组件',
+      title: '表单',
     },
     'en-US': {
       title: 'Root',
@@ -388,10 +386,10 @@ const Actions = observer(() => {
         }}
       />
       <Button href="https://github.com/alibaba/designable" target="_blank">
-        <GithubOutlined />
+        <GithubOutlined rev={undefined} />
         Github
       </Button>
-      <Button>保存</Button>
+      <Button>保存22</Button>
       <Button type="primary">发布</Button>
     </Space>
   )

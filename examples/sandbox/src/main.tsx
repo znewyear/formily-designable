@@ -28,7 +28,6 @@ import {
 import { Space, Button, Radio } from 'antd'
 import { GithubOutlined } from '@ant-design/icons'
 import { Sandbox } from '@designable/react-sandbox'
-import 'antd/dist/antd.less'
 
 const RootBehavior = createBehavior({
   name: 'Root',

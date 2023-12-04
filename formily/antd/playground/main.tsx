@@ -1,4 +1,3 @@
-import 'antd/dist/antd.less'
 import React, { useMemo } from 'react'
 import ReactDOM from 'react-dom'
 import {

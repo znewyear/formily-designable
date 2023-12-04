@@ -338,7 +338,8 @@ export class TreeNode {
 
   triggerMutation<T>(event: any, callback?: () => T, defaults?: T): T {
     if (this.operation) {
-      const result = this.operation.dispatch(event, callback) || defaults
+      const result =
+        (this.operation.dispatch(event, callback) as any) || defaults
       this.takeSnapshot(event?.type)
       return result
     } else if (isFn(callback)) {
